@@ -34,7 +34,7 @@ public class palindrome {
             startIndex--;
             endIndex++;
         }
-        if (maxPalindromeLength <= endIndex - startIndex - 1) {
+        if (maxPalindromeLength < endIndex - startIndex - 1) {
             firstPalindromeIndex = startIndex + 1;
             maxPalindromeLength = endIndex - startIndex - 1;
         }
